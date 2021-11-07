@@ -29,6 +29,10 @@ h2 {
   font-size: 3rem;
 }
 
+.material-icons.md-100 {
+  font-size: 10rem;
+}
+
 .title-section {
   display: flex;
   align-items: center;

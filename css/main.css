@@ -35,7 +35,7 @@ h2 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   background-image: url(../img/software-developer.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,6 +80,11 @@ h2 {
 .about-section__text {
   font-size: 2rem;
   text-align: center;
+}
+
+.about-section__text p{
+  border-left: 2px solid white;
+  padding: 3rem 2rem;
 }
 
 .about-section__img img {
@@ -128,42 +133,42 @@ h2 {
   grid-column: 1 / -1;
   background-color: #0353a4;
 }
+.contact-section__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  background-color: #012d5c;
+}
 
-form{
-  width: 100%;
+.contact-section__container-text {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #012d5c;
-  padding: 4rem 2rem;
 }
 
-fieldset{
-  width: 85%;
-  border: 0.3rem solid #02001677;
-  border-radius: 0.7rem;
-  padding: 3rem 10rem;
+.contact-section__container-text h3 {
+  font-size: 5rem;
+  text-align: center;
+  border-right: 2px solid rgb(255, 255, 255);
+  padding: 5rem 0;
 }
 
-fieldset div{
-  margin-bottom: 2rem;
-  display: inline-block;
+.contact-section__container-form{
   width: 100%;
+  padding: 3rem 5rem;
 }
 
-legend{
-  font-size: 2.5rem;
-  font-family: "Arimo", sans-serif;
-  font-weight: 400;
+.contact-section__container-form div{
+  margin-bottom: 2rem;
 }
 
-label{
-    display: block;
-    margin-bottom: 0.5rem;
+label {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-input, textarea{
+input,
+textarea {
   border: none;
   outline: none;
   border-radius: 0.5rem;
@@ -174,11 +179,33 @@ input, textarea{
   font-size: 1.5rem;
 }
 
-input{
+input {
   height: 4rem;
 }
 
-textarea{
+#submit{
+  padding: 0;
+  background-color: #000f29;
+}
+
+#submit:hover{
+  background-color: #000d20;
+}
+
+textarea {
   height: 10rem;
   resize: vertical;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border: 0.1rem solid black;
+}
+
+footer{
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.5rem;
 }

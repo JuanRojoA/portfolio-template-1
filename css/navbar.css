@@ -22,15 +22,15 @@ header{
 nav {
   z-index: 100;
   background-color: var(--dark);
-  padding: 1.6rem 3.2rem;
-  box-shadow: 0 3px 10px var(--shadow);
+  padding: 1.5rem 3rem;
+  box-shadow: 0 0.3rem 0.5rem var(--shadow);
 }
 
-h1 {
+.header-container h1 {
   color: #fff;
   font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 0.2rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   font-family: "Arimo", sans-serif;
 }
@@ -39,17 +39,17 @@ h1 {
   display: none;
   flex: 1 1 0%;
   justify-content: flex-end;
-  margin: 0 -1.6rem;
+  margin: 0 -1.5rem;
 }
 
 .header__menu a {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.03);
-  margin: 0 1.6rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0 1.5rem;
   font-weight: 400;
   font-size: 2rem;
   transition: 0.2s;
-  padding: 0.8rem 1.6rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 }
 
@@ -63,7 +63,7 @@ h1 {
 .header__mobile-menu {
   position: absolute;
   top: -1000px;
-  transition: 0.4s ease;
+  transition: 0.4s;
 }
 
 .header__mobile-menu.is-active {
@@ -86,7 +86,7 @@ h1 {
   font-weight: 400;
   font-size: 2rem;
   transition: 0.2s;
-  padding: 0.8rem 1.6rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 }
 
@@ -104,15 +104,18 @@ h1 {
 
 .header__hamburger span {
   display: block;
-  width: 3.3rem;
-  height: 0.4rem;
-  margin-bottom: 0.5rem;
+  width: 3.5rem;
+  height: 0.5rem;
   position: relative;
   background-color: var(--light);
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
   z-index: 1;
   transform-origin: 0 0;
   transition: 0.4s;
+}
+
+.header__hamburger span:nth-child(1), .header__hamburger span:nth-child(2){
+  margin-bottom: 0.5rem;
 }
 
 .header__hamburger:hover span:nth-child(2) {
@@ -121,7 +124,7 @@ h1 {
 }
 
 .header__hamburger.is-active span:nth-child(1) {
-  transform: translate(0px, -2px) rotate(45deg);
+  transform: translate(0px, -1px) rotate(45deg);
 }
 
 .header__hamburger.is-active span:nth-child(2) {
@@ -134,7 +137,7 @@ h1 {
   transform: translate(-3px, 3px) rotate(-45deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .header__hamburger, .header__mobile-menu.is-active {
     display: none;
   }

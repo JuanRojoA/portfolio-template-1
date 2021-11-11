@@ -35,6 +35,40 @@ h2 {
   font-size: 10rem;
 }
 
+.title-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../img/software-developer.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-section__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.title-section h1 {
+  font-family: "Arimo", sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0466c883;
+}
+
+.title-section p {
+  font-size: 2rem;
+  line-height: 0;
+}
+
 .about-section {
   width: 100%;
 }
@@ -58,13 +92,13 @@ h2 {
   font-size: 2rem;
   text-align: center;
   box-sizing: content-box;
-
 }
 
-.about-section__text p{
+.about-section__text p {
   width: 100%;
   padding: 3rem 2rem;
   border-left: 2px solid white;
+  font-size: 2.5rem;
 }
 
 .about-section__img img {
@@ -89,9 +123,13 @@ h2 {
 }
 
 .services-section__service h3 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 400;
   font-family: "Arimo", sans-serif;
+}
+
+.services-section__service p{
+  font-size: 2rem;
 }
 
 .services-section__service span {
@@ -113,14 +151,14 @@ h2 {
   background-color: #0353a4;
 }
 
-.projects-section__container{
+.projects-section__container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: auto;
 }
 
-.projects-section__project{
+.projects-section__project {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -148,7 +186,7 @@ h2 {
   grid-column: 1 / 10;
 }
 
-.projects-section__textContainer{
+.projects-section__textContainer {
   width: 50%;
   padding: 2rem;
   display: flex;
@@ -185,11 +223,11 @@ h2 {
   background-color: rgb(255, 255, 255);
 }
 
-.projects-section__imgContainer{
+.projects-section__imgContainer {
   width: 50%;
 }
 
-.projects-section__imgContainer.left img{
+.projects-section__imgContainer.left img {
   position: relative;
   left: -70px;
   top: 40px;
@@ -198,7 +236,7 @@ h2 {
   box-shadow: -0.7rem 0.7rem 0 rgba(0, 0, 0, 0.5);
 }
 
-.projects-section__imgContainer.right img{
+.projects-section__imgContainer.right img {
   position: relative;
   left: 70px;
   top: 40px;
@@ -227,12 +265,12 @@ h2 {
   padding: 5rem 0;
 }
 
-.contact-section__container-form{
+.contact-section__container-form {
   width: 100%;
   padding: 3rem 5rem;
 }
 
-.contact-section__container-form div{
+.contact-section__container-form div {
   margin-bottom: 2rem;
 }
 
@@ -257,12 +295,12 @@ input {
   height: 4rem;
 }
 
-#submit{
+#submit {
   padding: 0;
   background-color: #000f29;
 }
 
-#submit:hover{
+#submit:hover {
   background-color: #00060f;
 }
 
@@ -289,8 +327,81 @@ textarea:focus {
   line-height: 0;
 }
 
-footer{
+footer {
   padding: 2rem 0;
   text-align: center;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .title-section h1 {
+    font-size: 4rem;
+  }
+  .about-section__img img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-section h1 {
+    font-size: 3.5rem;
+  }
+  .about-section__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-section__img,
+  .about-section__text {
+    padding: 0rem 3rem;
+  }
+  .about-section__img{
+    padding: 3rem 3rem;
+  }
+  .about-section__img img {
+    height: 30rem;
+    width: auto;
+  }
+  .about-section__text p {
+    width: 100%;
+    border-left: none;
+    border-top: 2px solid white;
+  }
+  .services-section__service p{
+    font-size: 1.8rem;
+  }
+  #service-1 {
+    grid-column: 1 / -1;
+  }
+  
+  #service-2 {
+    grid-column: 1 / -1;
+  }
+  
+  #service-3 {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .material-icons.md-30 {
+    font-size: 2.5rem;
+  }
+  .title-section h1 {
+    font-size: 3rem;
+  }
+  .title-section p {
+    font-size: 1.8rem;
+  }
+  .about-section__img img {
+    height: 25rem;
+  }
+  .about-section__text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title-section h1 {
+    font-size: 2.5rem;
+  }
 }

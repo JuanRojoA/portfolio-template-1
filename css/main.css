@@ -45,16 +45,17 @@ h2 {
   background-image: url(../img/software-developer.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title-section__text {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
-.title-section h1 {
+.title-section h1, .title-section > h1 span {
   font-family: "Arimo", sans-serif;
   font-size: 5rem;
   font-weight: 600;
@@ -62,6 +63,11 @@ h2 {
   color: #fff;
   text-transform: uppercase;
   text-shadow: 0.2rem 0.2rem 0.2rem #0466c883;
+}
+
+.title-section > h1 span {
+  display: block;
+  margin-top: 1rem;
 }
 
 .title-section p {
@@ -373,7 +379,7 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  .title-section h1 {
+  .title-section h1, .title-section > h1 span  {
     font-size: 4rem;
   }
   .about-section__img img {
@@ -385,7 +391,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .title-section h1 {
+  .title-section h1, .title-section > h1 span  {
     font-size: 3.5rem;
   }
   .about-section__container {
@@ -487,7 +493,7 @@ footer {
   .material-icons.md-30 {
     font-size: 2.5rem;
   }
-  .title-section h1 {
+  .title-section h1, .title-section > h1 span  {
     font-size: 3rem;
   }
   .title-section p {
@@ -509,7 +515,7 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-  .title-section h1 {
+  .title-section h1, .title-section > h1 span  {
     font-size: 2.5rem;
   }
   .contact-section__container-text h3 {

@@ -80,7 +80,7 @@ h2 {
 }
 
 .about-section__img,
-.about-section__text {
+.about-section__textIconsContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,17 +88,40 @@ h2 {
   background-color: #003479;
 }
 
-.about-section__text {
+.about-section__textIconsContainer {
   font-size: 2rem;
   text-align: center;
   box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
 }
-
-.about-section__text p {
+.about-section__textIconsContainer > div {
   width: 100%;
   padding: 3rem 2rem;
   border-left: 2px solid white;
+}
+
+.about-section__textIconsContainer p {
   font-size: 2.5rem;
+}
+
+.about-section__iconContainer {
+  margin-top: 2rem;
+}
+
+.about-section__iconContainer i {
+  font-size: 4rem;
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.2s;
+}
+
+.about-section__iconContainer i:nth-of-type(3) {
+  margin-right: 0rem;
+}
+
+.about-section__iconContainer i:hover {
+  color: rgba(255, 255, 255);
 }
 
 .about-section__img img {
@@ -356,6 +379,9 @@ footer {
   .about-section__img img {
     width: 60%;
   }
+  .about-section__textIconsContainer p {
+    font-size: 2.3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -367,7 +393,7 @@ footer {
     flex-direction: column;
   }
   .about-section__img,
-  .about-section__text {
+  .about-section__textIconsContainer {
     padding: 0rem 3rem;
   }
   .about-section__img {
@@ -377,10 +403,13 @@ footer {
     height: 30rem;
     width: auto;
   }
-  .about-section__text p {
+  .about-section__textIconsContainer > div {
     width: 100%;
     border-left: none;
     border-top: 2px solid white;
+  }
+  .about-section__textIconsContainer p {
+    font-size: 2rem;
   }
   .services-section__service p {
     font-size: 1.8rem;
@@ -467,7 +496,7 @@ footer {
   .about-section__img img {
     height: 25rem;
   }
-  .about-section__text p {
+  .about-section__textIconsContainer p {
     font-size: 1.8rem;
   }
   .contact-section__container-text h3 {

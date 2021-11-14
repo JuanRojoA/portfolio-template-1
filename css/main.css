@@ -130,6 +130,10 @@ h2 {
   color: rgba(255, 255, 255);
 }
 
+.about-section__iconContainer i:active {
+  transform: scale(0.95);
+}
+
 .about-section__img img {
   width: 50%;
   border-radius: 50%;
@@ -290,6 +294,10 @@ h2 {
   background-color: rgb(255, 255, 255);
 }
 
+.projects-section__textContainer a:active {
+  transform: scale(0.95);
+}
+
 .contact-section__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -347,6 +355,10 @@ input {
 
 #submit:hover {
   background-color: #00060f;
+}
+
+#submit:active {
+  transform: scale(0.95);
 }
 
 textarea {
